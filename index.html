@@ -134,25 +134,21 @@ aside {
   top: 20px;
   align-self: flex-start;
 }
-@media only screen 
-    and (device-width: 414px) 
-    and (device-height: 896px) 
-    and (-webkit-device-pixel-ratio: 2) 
-    and (orientation: portrait) { 
-    aside {
+@media (max-width: 1000px) {
+  aside {
     top: 0;
     margin-bottom: 30px;
     position: relative;
-    }
-    .tight-img {
-      float: none;
-      display: block;
-      margin: 0 auto 15px 50px;
-      width: 270px;
-    }
-    .box {
-      width: 100% !important;
-    }
+  }
+  .tight-img {
+    float: none;
+    display: block;
+    margin: 0 auto 15px 50px;
+    width: 270px;
+  }
+  .box {
+    width: 100% !important;
+  }
 }
 .active-gradient span {
   background: linear-gradient(90deg, #f32121, #ff737a);
