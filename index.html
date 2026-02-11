@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Ad</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+<h1>Help Improve Diabetes Care: Explore a Potential New <br>Treatment!</h1>
+  <div class="row">
+    <!-- Sidebar -->
+    <aside class="col-lg-3">
+      <div class="mt-4 mb-4">
+        <h3 style="margin-bottom: 20px;">Contents</h3>
+        <ul class="list-unstyled">
+            <li><span class="active-gradient">About the Study</span></li>
+            <li>Why Participate?</li>
+            <li>Your Rights</li>
+            <li>Who Can Participate?</li>
+            <li>More Study Details</li>
+            <li>About the Research Centre:</li>
+            <li>Study Location</li>
+        </ul>
+      </div>
+      <div class="card shadow-sm p-3">
+        <h3 style="margin: auto;">Next Steps</h3>
+        <ol class="unstyled-steps">
+            <li>Complete the study <br>questionnaire</li>
+            <li>Understand if you're eligible to participate</li>
+        </ol>
+        <button onclick="nextStep()">Click Here</button>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="col-lg-9">
+        <section class="about-section" style="padding: 60px 0 10px 0;">
+        <h3 class="mb-4" id="about">About the Study</h3>
+            <img src="oldman.jpg" alt="old man" class="tight-img img-fluid rounded shadow-sm">
+            <p class="lh-lg mb-4">Struggling with type 2 diabetes? Join this research study to explore a new potential treatment that aims to lower blood sugar and body weight. With type 2 diabetes significantly increasing the risk of cardiovascular disease, finding effective treatments is crucial. This study will compare different doses of a new treatment to see how well they help manage blood sugar and reduce body weight.</p>
+            <p class="lh-lg">Participants will play a vital role in potentially transforming diabetes care while receiving close health monitoring and support. If you have type 2 diabetes, your involvement could help pave the way for better treatments and improved health outcomes. Join researchers in making a difference!</p>
+        </section>
+      
+      <h3 id="participate" style="margin-bottom: 30px;">Who Can Participate?</h3>
+      <ul class="criteria">
+        <li>People aged 18-75 who are diagnosed with type 2 diabetes mellitus for at least greater than 180 days</li>
+        <li>Must have been on a stable daily dose of Metformin with or without SGLT2 inhibitors such as Jardiance, Jardiamet, Glyxambi, Forxiga, Qtern and Xigduo XR, etc.</li>
+        <li>Must have HbA1c of 7.5% - 10%</li>
+        <li>Must not have been diagnosed with diabetic retinopathy or maculopathy</li>
+      </ul>
+
+      <h3 style="margin-top: 50px;">About the Research Centers</h3>
+      <div class="box"></div>
+      <h6><u>Macquarie University</u></h6>
+      <p class="lh-lg mb-4">Macquarie University is a leading public research university renowned for its commitment to academic excellence and innovative research. Offering a wide range of programs across disciplines such as business, education, law, science, and the arts, the university is dedicated to fostering knowledge and embracing different views.</p>
+      <div class="box" style="background-color: rgb(7, 7, 58);"></div>
+      <h6><u>Box Hill Hospital</u></h6>
+      <p class="lh-lg mb-4">Box Hill Hospital in Melbourne is one of the seven hospitals that are governed within the Eastern Health network, which provides health care services across the Eastern metropolitan area of Victoria.</p>
+
+      <h6 style="font-weight: bold; text-align: center; margin-bottom: 30px;">This study has been reviewed and approved by the HREC for the sites indicated above.</h3>
+
+      <h3>Study Location</h3>
+      <iframe style="border: 0;" 
+        src="https://www.google.com/maps/d/embed?mid=1yMhEKfpGzi1ZlW2SaAxB2UzYbCJn-A4&amp;ehbc=2E312F" 
+        width="100%" height="450">
+      </iframe>
+    </div>
+  </div>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script>
+    function nextStep() {
+        location.href = "https://docs.google.com/forms/d/e/1FAIpQLSc7UMrZx8BGcGBt3zN5MZtigpC-mpiavDV1U7MpmJ1i5-HGDw/viewform?usp=publish-editor";
+    }
+</script>
+<style>
+html, body {
+  font-family: 'Roboto', sans-serif;
+  padding: 30px
+}
+h3 {
+  font-weight: 700;
+}
+h1 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.active-gradient {
+  background: linear-gradient(90deg, #f32121, #ff737a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.criteria {
+  max-width: 900px;        
+  padding-left: 20px;      
+}
+
+.criteria li {
+  margin-bottom: 10px;     
+  line-height: 1.6;     
+}
+.list-unstyled li {
+  margin-bottom: 20px;     
+  font-size: .9rem;
+}
+.unstyled-steps {
+  padding-left: 20px;     
+}
+.unstyled-steps li {
+  margin-top: 5px;
+  margin-bottom: 10px;    
+  font-size: 1rem;
+}
+button {
+  background-color: #e7424f; 
+  color: white;
+  border: none;
+  padding: 15px 0 15px 0;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.box {
+  width: 32%;
+  height: 130px;
+  background-color: #e7424f;
+  margin: 20px 0 50px 0;
+  font-weight: bold;
+  border-radius: 20px;
+}
+.card {
+  border-radius: 20px;
+}
+
+.tight-img {
+  float: right;
+  max-width: 380px;
+  margin-left: 25px;
+  margin-bottom: 15px;
+}
+</style>
